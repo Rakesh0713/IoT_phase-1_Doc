@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Noise</title>
+    <script>
+        const constantNoiseLevel = 75; // Set your constant noise level in dB
+
+        // Function to update the displayed noise level
+        function updateNoiseLevel() {
+            const noiseLevelElement = document.getElementById('noise-level');
+            noiseLevelElement.innerHTML = `Noise Level: ${constantNoiseLevel} dB`;
+        }
+
+        // Call the function to initially display the noise level
+        updateNoiseLevel();
+    </script>
+</head>
+<body>
+    <h1>Noise Level Monitor</h1>
+    <div id="noise-level"></div>
+</body>
+</html>
